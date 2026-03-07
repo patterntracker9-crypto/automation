@@ -1,6 +1,1 @@
-import { app } from './app.js';
-const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => {
-  console.log(`Sever is running on ${PORT} number`);
-});
+import './app.js'; // Sirf import karein, app.js automatically listen karega
