@@ -49,7 +49,7 @@ app.use(express.urlencoded({ extended: true }));
 // CORS configuration
 app.use(
   cors({
-    origin: 'http://localhost:5173', // Your frontend URL
+    origin: 'https://autopic.netlify.app', // Your frontend URL
     credentials: true,
   })
 );
