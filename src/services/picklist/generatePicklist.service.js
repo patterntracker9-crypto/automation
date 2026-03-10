@@ -378,7 +378,7 @@ const generatePicklist = async (channel, socketId = null) => {
   emitToClient('launch', 'Launching browser...');
 
   const browser = await chromium.launch({
-    headless: false, // Production me headless: true rakhein
+    headless: true, // Production me headless: true rakhein
     args: ['--no-sandbox', '--disable-setuid-sandbox'],
   });
 
@@ -659,4 +659,5 @@ const generatePicklist = async (channel, socketId = null) => {
 };
 
 export { generatePicklist };
+
 
